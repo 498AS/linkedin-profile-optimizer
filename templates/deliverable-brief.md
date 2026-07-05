@@ -8,6 +8,7 @@
 - **Cliente / sujeto:** `<<>>`
 - **Autor (iniciales):** `<<COP / …>>`
 - **Confidencialidad:** `<<sí/no>>` (si cliente → incluir nota)
+- **¿Publicar online en entregas.zoopa.es?** `<<sí/no>>` — si sí → skill `customer-docs`, carpeta `{cliente}/{slug}/`. Aviso: público al instante; confirmar con el usuario antes del push.
 - **Nombre de archivo:** `AUDIT_LinkedIn_<<Perfil|Page|Dual>>_<<sujeto>>_v01_ZOOPA_<<autor>>_<<YYYYMMDD>>` (Dual = perfil + Page en un mismo entregable, o dos archivos enlazados)
 - **Ruta de output:** `<<01_CLIENT_DELIVERABLES/{cliente}/ | 06_COP_PERSONAL/LINKEDIN_PROFILES/>>`
 

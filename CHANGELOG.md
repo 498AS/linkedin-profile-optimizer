@@ -2,6 +2,14 @@
 
 Todas las versiones notables de `linkedin-profile-optimizer`.
 
+## [1.4.0] — 2026-07-05
+
+### Añadido
+- **Cerebro auto-actualizable (cron trimestral)**: `scripts/kb-refresh.workflow.js` (re-investiga las 12 dimensiones con verificación web; dimensiones extraídas programáticamente del workflow fundacional), `scripts/kb_diff.py` (diff KB vigente vs fresco → propuesta markdown con valores cambiados, áreas nuevas y fuentes; testeado con self-diff = 0) y `scripts/KB-REFRESH-RUNBOOK.md`. En el entorno Zoopa lo dispara el scheduled task `linkedin-kb-refresh` (1 ene/abr/jul/oct, 9:00). Nada entra al prompt canónico sin revisión humana.
+- **Modo FLOTA** (programa de advocacy enterprise): `scripts/fleet-audit.workflow.js` audita hasta 12 portavoces + la Page en paralelo y coordina pilares sin solapes; `templates/fleet-plan.md`. Material siempre aportado por el cliente, cero scraping.
+- **Humanize integrado**: todo copy final pasa por el skill `humanize-text` antes de entregarse (360Brew penaliza la IA de bajo esfuerzo); cuenta personal de Carlos Ortet → patrones `linkedin-voice-carlos-ortet.md`.
+- **Informe productizado**: Paso 6 ofrece publicar el entregable mczoopa en entregas.zoopa.es vía skill `customer-docs` (con confirmación previa: público al instante). Campo de publicación en `deliverable-brief.md`.
+
 ## [1.3.0] — 2026-07-05
 
 ### Añadido

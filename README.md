@@ -75,6 +75,7 @@ linkedin-profile-optimizer/
 │   └── knowledge-base-2026.json            # 12 packs de research (286 KB)
 ├── templates/                # 16 worksheets rellenables
 ├── system-prompt/            # system prompt v3.0 (fuente canónica)
+├── scripts/                  # kb-refresh.workflow.js · kb_diff.py · fleet-audit.workflow.js · runbook
 ├── docs/                     # ARCHITECTURE.md · USAGE.md
 └── vault-notes/              # nota espejo del vault Obsidian
 ```
@@ -88,6 +89,24 @@ linkedin-profile-optimizer/
 - **Reset de reach** (views −50%, engagement −25%, followers −59% YoY): el éxito se mide en profundidad y pipeline, no en impresiones.
 
 Detalle completo en [`references/01-algorithm-2026.md`](references/01-algorithm-2026.md) y [`docs/`](docs/).
+
+## Modo FLOTA (programas enterprise)
+
+Para **CEO + portavoces + Page** (programa de advocacy): `scripts/fleet-audit.workflow.js` audita hasta 12 perfiles **en paralelo** (un agente por perfil, material aportado por el cliente, cero scraping) y un coordinador propone el reparto de pilares sin solapes con `templates/fleet-plan.md`. La Page amplifica, no lidera.
+
+## Cerebro auto-actualizable
+
+El KB se re-verifica **cada trimestre** (LinkedIn cambia el algoritmo cada pocos meses):
+
+1. `scripts/kb-refresh.workflow.js` re-investiga las 12 dimensiones con verificación web.
+2. `scripts/kb_diff.py` compara contra el KB vigente → propuesta markdown (valores cambiados, áreas nuevas, fuentes).
+3. La propuesta se archiva como issue en este repo; **nada entra al prompt canónico sin revisión humana**.
+
+Runbook completo: [`scripts/KB-REFRESH-RUNBOOK.md`](scripts/KB-REFRESH-RUNBOOK.md). En el entorno Zoopa lo dispara un scheduled task trimestral (1 ene/abr/jul/oct).
+
+## Voz humana por defecto
+
+Todo copy final (headlines, About, mensajes) pasa por el skill `humanize-text` antes de entregarse: 360Brew penaliza la IA de bajo esfuerzo, así que la naturalidad es una decisión de alcance, no de estilo. Los entregables de cliente pueden publicarse en un paso vía el skill `customer-docs` (entregas.zoopa.es).
 
 ## Cumplimiento
 

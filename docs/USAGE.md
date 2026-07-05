@@ -32,12 +32,13 @@ Carga el reference del modo + `07-compliance-guidelines.md`. Scorecard campo por
 ### Paso 4 · Reescritura (opciones)
 - **MODO A**: headline (`headline-worksheet.md`), About (`about-personal.md`), experiencia (`experience-bullets.md`), SSI (`ssi-action-plan.md`).
 - **MODO B**: tagline + About SEO (`about-company.md`), advocacy (`advocacy-kit.md`).
+- **Humanize obligatorio**: todo copy final pasa por el skill `humanize-text` (360Brew penaliza la IA de bajo esfuerzo); cuenta personal de Carlos Ortet → además `linkedin-voice-carlos-ortet.md` (skill content-factory).
 
 ### Paso 5 · Plan de contenido + KPIs
 Carga `02`, `06` y `07`. Pilares ≥90 días + plan 30d (`content-plan-30d.md`). Outreach → `social-selling-plan.md`; Ads → `ads-plan.md`; Newsletter → `newsletter-plan.md`; Reporting → `monthly-report.md`.
 
 ### Paso 6 · Entregable branded (opcional)
-One-pager/informe → skill `mczoopa`. Deck → `deck-zoopa` / `deck-498a-editorial`. Brief con `deliverable-brief.md`.
+One-pager/informe → skill `mczoopa`. Deck → `deck-zoopa` / `deck-498a-editorial`. Brief con `deliverable-brief.md`. **Publicación en un paso**: para entregables de cliente, ofrecer publicar en entregas.zoopa.es vía skill `customer-docs` (confirmar antes: público al instante).
 
 ### Paso 7 · Compliance gate (vinculante)
 Emite `compliance-checklist.md`: 4 líneas rojas + límites + etiquetado IA (Art. 50) + GDPR + accesibilidad. Si algo falla, se reescribe antes de cerrar.
@@ -71,3 +72,4 @@ Emite `compliance-checklist.md`: 4 líneas rojas + límites + etiquetado IA (Art
 - `"queremos estrategia founder-led: el CEO y la página juntos"` → DUAL.
 - `"estudia la afinidad de nuestro director con estos 5 inversores y prepara un plan para conectar"` → MODO C.
 - `"tengo nuevo CEO: analiza si nuestros perfiles y publicaciones son afines y haz un plan para alinearlos"` → MODO C **variante interna** (análisis bidireccional + `profile-alignment-plan.md`, sin secuencia de touches).
+- `"audita los perfiles del comité de dirección y la página, y coordina sus pilares"` → **Modo FLOTA** (`scripts/fleet-audit.workflow.js` + `fleet-plan.md`).

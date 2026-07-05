@@ -52,6 +52,15 @@ Del plan LinkedIn de David Urbano (ene 2026) se destiló la metodología de **es
 
 **Variante interna (v1.2):** si el objetivo ya está conectado (CEO, jefe, comité), el plan no es de acercamiento sino de **alineamiento**: análisis bidireccional de publicaciones, territorio compartido vs complementario y convergencia de perfiles sin clonar (`templates/profile-alignment-plan.md`).
 
+## Automatización y mejoras (v1.4)
+
+| Mejora | Cómo funciona |
+|--------|---------------|
+| **Cerebro auto-actualizable** | Scheduled task `linkedin-kb-refresh` (cron trimestral: 1 ene/abr/jul/oct 9:00, corre con Claude Code abierto). Lanza `scripts/kb-refresh.workflow.js` (12 agentes, verificación web) → `scripts/kb_diff.py` compara con el KB vigente → propuesta markdown archivada en `_OUTPUTS/{mes}/` + issue en el repo. **Aplicación siempre con revisión humana** (runbook: `scripts/KB-REFRESH-RUNBOOK.md`) |
+| **Humanize integrado** | Todo copy final del skill pasa por `humanize-text`; cuenta personal de Carlos → además `linkedin-voice-carlos-ortet.md`. Razón: 360Brew penaliza IA de bajo esfuerzo |
+| **Modo FLOTA** | CEO + hasta 12 portavoces + Page auditados en paralelo (`scripts/fleet-audit.workflow.js`) + coordinación de pilares sin solapes (`templates/fleet-plan.md`). Vendible como programa de advocacy enterprise |
+| **Informe productizado** | Paso 6: mczoopa → publicación opcional en entregas.zoopa.es vía `customer-docs` (confirmación previa; público al instante) |
+
 ## Arquitectura
 
 ```

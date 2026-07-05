@@ -3,7 +3,7 @@ name: linkedin-profile-optimizer
 description: |
   Optimiza perfiles de LinkedIn aplicando el algoritmo y las best practices 2026 (modelo 360Brew) y TODOS los guidelines de la plataforma. Trabaja en dos modos y, al invocarse, PREGUNTA primero si vas a optimizar un perfil de PERSONA (perfil individual: fundador, ejecutivo, experto, comercial, profesional) o de EMPRESA/MARCA (LinkedIn Page), y aplica el playbook correcto para cada caso: auditoria, reescritura (headline, About, experiencia, skills / tagline y About de Page), plan de contenido, social selling y ads, compliance y KPIs. Opcional: leer el perfil o la Page en vivo con el navegador (claude-in-chrome) y generar un entregable branded (one-pager mczoopa o deck). Usar siempre que alguien quiera optimizar, auditar o mejorar un perfil o pagina de LinkedIn, reescribir su headline o About, hacer personal branding, o preparar una Company Page.
   Incluye un tercer modo de AFINIDAD/VINCULO: estudiar la compatibilidad con otro perfil u otros perfiles de LinkedIn (mapa de afinidad, puntos en comun, plan de acercamiento por fases) y generar el informe correspondiente.
-  Triggers: "linkedin-profile-optimizer", "/linkedin-profile-optimizer", "optimizar perfil de linkedin", "optimizar linkedin", "auditar linkedin", "mejorar mi perfil de linkedin", "mi headline de linkedin", "about de linkedin", "personal branding linkedin", "optimizar company page", "linkedin de empresa", "pagina de empresa linkedin", "optimiza mi linkedin", "afinidad con un perfil", "compatibilidad de perfiles linkedin", "crear vinculo con un perfil", "plan de acercamiento linkedin", "conectar con [persona] en linkedin", "alinear mi perfil con mi CEO/jefe", "afinidad con mi nuevo CEO", "que nuestros perfiles sean afines".
+  Triggers: "linkedin-profile-optimizer", "/linkedin-profile-optimizer", "optimizar perfil de linkedin", "optimizar linkedin", "auditar linkedin", "mejorar mi perfil de linkedin", "mi headline de linkedin", "about de linkedin", "personal branding linkedin", "optimizar company page", "linkedin de empresa", "pagina de empresa linkedin", "optimiza mi linkedin", "afinidad con un perfil", "compatibilidad de perfiles linkedin", "crear vinculo con un perfil", "plan de acercamiento linkedin", "conectar con [persona] en linkedin", "alinear mi perfil con mi CEO/jefe", "afinidad con mi nuevo CEO", "que nuestros perfiles sean afines", "modo flota", "auditar los perfiles del equipo directivo", "programa de advocacy linkedin", "portavoces linkedin".
   NO usar para redactar posts/articulos/hilos de LinkedIn u otros canales: para eso usar `content-factory`. Este skill trabaja sobre el ACTIVO (perfil/Page) y la estrategia de relacion, no produce contenido editorial multicanal.
 ---
 
@@ -46,7 +46,7 @@ Antes de nada, pregunta de forma explícita:
 > **A) Un perfil de PERSONA** — perfil individual (fundador, ejecutivo, experto, comercial, profesional).
 > **B) Una EMPRESA / MARCA** — LinkedIn Page (company page).
 > **C) AFINIDAD / VÍNCULO con otro(s) perfil(es)** — estudiar la compatibilidad con uno o varios perfiles objetivo y diseñar el plan de acercamiento (caso tipo: conectar con un decisor, inversor, partner o referente).
-> *(Si aplican varios —p. ej. employer brand vía founder-led, u optimizar el perfil ANTES de acercarse a un objetivo— dilo y los combinamos: A/B preparan el activo; C construye la relación.)*
+> *(Si aplican varios —p. ej. employer brand vía founder-led, u optimizar el perfil ANTES de acercarse a un objetivo— dilo y los combinamos: A/B preparan el activo; C construye la relación. Si son **varios portavoces + la Page**, ver la sección "Modo FLOTA".)*
 
 Según la respuesta, el reference maestro es `03-mode-a-personal-profile.md` (A), `04-mode-b-company-page.md` (B) o `10-affinity-connection.md` (C). No avances sin esto: el algoritmo, los activos, los límites y los KPIs difieren radicalmente entre modos.
 
@@ -77,6 +77,8 @@ Reescribe cada elemento aplicando el reference del modo. Entrega **opciones**, n
 
 Respeta límites exactos de caracteres (están en el reference). Sin emojis decorativos que empujen la keyword fuera del corte. Sin guiones largos entre cláusulas (estilo casa).
 
+**Humanize obligatorio (paso final del copy).** Todo texto que salga de este paso (headlines, About, bullets, posts de ejemplo, mensajes) pasa por el skill **`humanize-text`** antes de entregarse. Si el sujeto es Carlos Ortet (cuenta personal), aplica además los patrones de `~/.claude/skills/content-factory/references/linkedin-voice-carlos-ortet.md`. Razón algorítmica, no cosmética: 360Brew **penaliza la IA de bajo esfuerzo** (lenguaje genérico, estructura de plantilla; ver reference 01) y un About que suena a LLM reduce el reach de todo lo que publique después.
+
 ### Paso 5 · Plan de contenido + KPIs
 Carga `02-content-formats-calendar.md`, `06-advanced-formats-and-analytics.md` y **`07-compliance-guidelines.md`** (valida contenido y etiquetado de IA **antes** de planificar, no solo al cierre). Entrega: 3-4 pilares temáticos estables (**≥90 días** para el expertise match) y, dentro de ellos, un plan operativo de **30 días** con content mix del modo, calendario/cadencia 2026 (**3-5/sem, 2-5 aceptable**; Mar-Jue 10-12h) y **KPIs** del modo, con `templates/content-plan-30d.md`.
 - **DUAL**: un único plan con reparto founder-led % / Page % / advocacy % (`templates/dual-coupling.md`).
@@ -90,6 +92,7 @@ Si el usuario quiere un documento presentable (auditoría + plan para cliente o 
 - **Deck de venta/presentación** → invoca **`deck-zoopa`** (corporate) o **`deck-498a-editorial`** (lab).
 - Rutas de output: ver tabla al final. Cliente → `01_CLIENT_DELIVERABLES/{cliente}/`; personal COP → `06_COP_PERSONAL/`.
 - Nomenclatura Zoopa (de `08-tools-and-deliverables.md`): `AUDIT_LinkedIn_{Perfil|Page}_{sujeto}_v01_ZOOPA_{autor}_{YYYYMMDD}`.
+- **Publicación online (opcional, solo entregables de cliente):** tras generar el HTML mczoopa, ofrece publicarlo en **entregas.zoopa.es** invocando el skill **`customer-docs`** (carpeta `{cliente}/{slug}/`). **Confirma SIEMPRE antes: es público al instante.** Del chat al entregable cliente publicado en un paso.
 
 ### Paso 7 · Compliance gate (VINCULANTE, no opcional)
 **No entregues ningún plan sin este bloque.** Rellena y **emite `templates/compliance-checklist.md`** como parte de todo entregable: cada táctica recomendada marcada PASS/FAIL contra las 4 líneas rojas (automatización/bots, scraping, pods, engagement bait) + límites de plataforma (invites <100/sem, aceptación >30-40%, ritmo humano) + etiquetado de IA (EU AI Act Art. 50, oblig. desde 2-ago-2026) + GDPR en outreach B2B + accesibilidad (alt text, subtítulos, hashtags camelCase). **Si cualquier táctica falla, reescríbela antes de cerrar: el cumplimiento gana.** Doctrina completa en `07-compliance-guidelines.md`.
@@ -119,6 +122,28 @@ La respuesta **enruta el sub-playbook** (tabla completa en reference 10, §7): t
 > **Variante interna** → `templates/profile-alignment-plan.md`: análisis de publicaciones de ambos, territorio compartido vs complementario, ajustes de perfil que convergen **sin clonar** (regla de complementariedad: mismo mapa, distinta voz), engagement inteligente + contenido coordinado + refuerzo mutuo. KPI real: señales del stakeholder, no vanity metrics.
 
 **C5 · Informe.** Estructura de 9 secciones del reference (§6). Nomenclatura: `INFORME_LinkedIn_Afinidad_{sujeto}_v01_ZOOPA_{autor}_{YYYYMMDD}`. Entregable branded opcional (Paso 6) y **compliance gate obligatorio** (Paso 7).
+
+## Modo FLOTA (programa de advocacy · MODO B/DUAL escalado)
+
+Cuando el encargo es **varios portavoces + la Page** (CEO + N voces + empresa; programa enterprise de advocacy), no audites en serie: lanza el workflow paralelo.
+
+1. **Recoge el material de TODOS los perfiles** (pegado/export por el usuario; cero scraping) + el objetivo del programa.
+2. **Lanza** `Workflow({scriptPath: "~/.claude/skills/linkedin-profile-optimizer/scripts/fleet-audit.workflow.js", args: {objective, subjects: [{name, role, material}], page: {name, material}}})` — un agente por perfil + uno por la Page, y un coordinador que propone el reparto de pilares.
+3. **Consolida** con `templates/fleet-plan.md`: territorios sin solapes (mismo mapa, distinta voz), la Page como amplificador, calendario sin canibalización de franjas, perfiles con score <60 → MODO A previo.
+4. Máximo 12 portavoces por flota. Compliance gate (Paso 7) sobre el plan completo.
+
+## Automatización (cerebro auto-actualizable)
+
+El KB caduca: LinkedIn cambia el algoritmo cada pocos meses. El sistema se re-verifica **cada trimestre**:
+
+| Pieza | Qué hace |
+|-------|----------|
+| `scripts/kb-refresh.workflow.js` | Re-investiga las 12 dimensiones con verificación web (12 agentes en paralelo) |
+| `scripts/kb_diff.py` | Diff del KB fresco vs vigente → propuesta markdown (valores cambiados, áreas nuevas, fuentes) |
+| `scripts/KB-REFRESH-RUNBOOK.md` | Runbook completo: workflow → diff → issue en GitHub → aplicar con revisión humana |
+| Scheduled task `linkedin-kb-refresh` | Cron trimestral (1 ene/abr/jul/oct, 9:00) que ejecuta el runbook |
+
+**Regla:** ningún cambio entra al prompt canónico sin revisión humana y sin fuente del run fresco. Si el diff no detecta cambios sustantivos, no se toca nada.
 
 ## Lectura de perfil en vivo (claude-in-chrome)
 
@@ -170,6 +195,7 @@ Vault raíz: `/Users/cop/Documents/OBSIDIAN_WORKSPACE/BIBLIOTECA_COP_2026/`
 | `templates/content-plan-30d.md` | Plan de contenido 30 días + KPIs |
 | `templates/monthly-report.md` | Informe mensual de performance |
 | `templates/dual-coupling.md` | Acoplamiento persona↔Page (modo DUAL) |
+| `templates/fleet-plan.md` | Plan de flota: portavoces + Page con pilares coordinados (Modo FLOTA) |
 | `templates/affinity-map.md` | Mapa de afinidad con perfiles objetivo (MODO C) |
 | `templates/connection-plan.md` | Plan de vínculo por fases + secuencia 1:1 (MODO C) |
 | `templates/profile-alignment-plan.md` | Alineamiento de perfiles con stakeholder ya conectado (MODO C interno: CEO, jefe, comité) |

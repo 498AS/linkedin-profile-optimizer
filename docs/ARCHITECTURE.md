@@ -41,6 +41,15 @@ El prompt es la fuente; el skill se construyó **a partir de él**. Los `referen
 3. **Skill** — `references/` = cortes del prompt; `SKILL.md` = manual operativo; 16 `templates/`.
 4. **Review adversarial** — 5 lentes (formato/trigger, flujo/UX, dual-mode, compliance, completitud). 0 P1; P2/P3 relevantes aplicados (ruta DUAL operativa, +9 templates, gate vinculante, etiquetado IA en el punto de acción, live-read sin scraping).
 
+## Automatización
+
+| Script | Rol |
+|--------|-----|
+| `scripts/kb-refresh.workflow.js` | Workflow de 12 agentes que re-investiga las 12 dimensiones (verificación web). Las dimensiones son las mismas del build original: se extrajeron programáticamente del workflow fundacional para evitar drift. |
+| `scripts/kb_diff.py` | Diff KB vigente vs fresco. Matching por claves estables (dimension, field, area); los textos reescritos generan churn, por eso separa "valores cambiados" (alta señal) de "posibles guidelines nuevas" (revisar). Testeado: self-diff = 0. |
+| `scripts/KB-REFRESH-RUNBOOK.md` | Procedimiento trimestral: workflow → diff → issue en GitHub → aplicar con revisión humana → resync 5 copias por MD5. |
+| `scripts/fleet-audit.workflow.js` | Modo FLOTA: auditorías en paralelo (barrera antes de coordinar: el reparto de pilares necesita todos los scorecards) + coordinador. |
+
 ## Mantenimiento
 
-Para cambios de fondo (algoritmo, guidelines): editar el **prompt canónico**, resincronizar las copias y **regenerar/actualizar los `references/`** de este repo. Prompt y skill comparten doctrina: no dejar que diverjan.
+Para cambios de fondo (algoritmo, guidelines): editar el **prompt canónico**, resincronizar las copias y **regenerar/actualizar los `references/`** de este repo. Prompt y skill comparten doctrina: no dejar que diverjan. El ciclo trimestral de `kb-refresh` es el mecanismo estándar para detectar cuándo toca.
