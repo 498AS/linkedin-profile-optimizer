@@ -2,6 +2,18 @@
 
 Todas las versiones notables de `linkedin-profile-optimizer`.
 
+## [1.3.0] — 2026-07-05
+
+### Añadido
+- **Router de relación en MODO C (pregunta obligatoria en C1)**: el skill pregunta qué relación tiene el sujeto con cada objetivo y enruta el sub-playbook. 5 tipos:
+  1. Misma organización · jerárquica (CEO, jefe) → alineamiento interno
+  2. Misma organización · colega/peer → alineamiento simétrico (advocacy cruzado, territorios repartidos)
+  3. Colega externo con relación previa → reactivación warm (saltar touches iniciales, abrir con contexto real)
+  4. Esperas trabajar juntos (cliente, partner, hiring manager) → acercamiento estándar con matiz comercial o de candidatura
+  5. Referente sin relación previa → acercamiento en frío + atracción inversa
+- Tabla de enrutado + diferencias jerárquico vs peer en `references/10-affinity-connection.md` §7.
+- Campo de relación en `affinity-map.md`; notas de enrutado en `connection-plan.md` y `profile-alignment-plan.md`.
+
 ## [1.2.0] — 2026-07-05
 
 ### Añadido

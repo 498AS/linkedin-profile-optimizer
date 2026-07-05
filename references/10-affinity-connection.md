@@ -111,10 +111,34 @@ Web personal (hub) <-> newsletter (profundidad) <-> X (tiempo real) <-> medios (
 
 Convenciones: contenido copy-ready en bloques de codigo · tablas para comparaciones · callouts para el insight clave · variante McKinsey con scorecard 0-100. Nomenclatura: `INFORME_LinkedIn_Afinidad_<<sujeto>>_v01_ZOOPA_<<autor>>_<<YYYYMMDD>>`.
 
-## 7. Variante interna - alineamiento con un stakeholder ya conectado [GENERALIZADO]
+## 7. Enrutado por tipo de relacion + variante interna [GENERALIZADO]
+
+> [!important] Pregunta obligatoria del discovery C1
+> **La relacion con el objetivo determina el sub-playbook.** El skill pregunta SIEMPRE, por cada objetivo: "¿que relacion tienes con esta persona?" y enruta segun la tabla. Saltarse esta pregunta produce planes absurdos (touches en frio a tu propio jefe, o pedir "alineamiento" a un desconocido).
+
+### Tabla de enrutado
+
+| # | Relacion | Sub-playbook | Template | Matices clave |
+|---|----------|--------------|----------|---------------|
+| 1 | **Misma organizacion · jerarquica** (CEO, jefe, direccion) | Alineamiento interno | `profile-alignment-plan.md` | Analisis bidireccional; anti-adulacion (regla de complementariedad); KPI = senales del stakeholder |
+| 2 | **Misma organizacion · colega/peer** | Alineamiento simetrico | `profile-alignment-plan.md` (simetrico) | Advocacy mutuo y co-creacion; riesgo = solape de territorio/celos -> repartir territorios y dar credito |
+| 3 | **Colega externo con relacion previa** (ex-companero, conocido, ya conectados) | Reactivacion warm | `connection-plan.md` saltando touches 1-2 | Abrir con contexto real compartido (proyecto, etapa comun); DM temprano con valor es aceptable; nunca fingir mas cercania de la real |
+| 4 | **Esperas trabajar con el/ella** (cliente potencial, partner, hiring manager, futuro empleador) | Acercamiento estandar | `connection-plan.md` completo | Matiz comercial -> anadir `social-selling-plan.md`; matiz candidatura -> perfil orientado a busqueda de recruiter (keywords, skills, Open to Work) |
+| 5 | **Referente sin relacion previa** (inversor, media, thought leader) | Acercamiento en frio + atraccion inversa | `connection-plan.md` completo | El contenido iman pesa mas que el outreach; comentar donde el objetivo mira; paciencia larga; nunca pitch |
+
+**Diferencias del tipo 2 (peer) frente al tipo 1 (jerarquico):**
+
+| Eje | 1 · Jerarquico | 2 · Peer |
+|---|---|---|
+| Direccion del ajuste | El sujeto converge hacia la narrativa del stakeholder | **Simetrico**: ambos territorios se negocian y reparten |
+| Refuerzo | Credito hacia arriba, desarrollo de sus temas | **Advocacy cruzado**: amplificacion mutua, co-creacion (post a dos voces) |
+| Riesgo principal | Parecer adulador o clon | Solape de territorio -> competencia percibida, celos |
+| Mitigacion | Mismo mapa, distinta voz | Territorios complementarios explicitos + credito reciproco |
+
+### Variante interna (tipos 1-2) - alineamiento
 
 > [!info] Cuando aplica
-> El objetivo es alguien con quien el sujeto **ya tiene relacion** (su CEO, su jefe, el comite, un peer interno) y el encargo no es "conseguir la relacion" sino **converger narrativas**: que ambos perfiles y sus publicaciones se refuercen mutuamente. Detectarla en discovery: si el objetivo es interno/ya conectado, la secuencia de touches en frio (fase 4 estandar) NO aplica.
+> El objetivo es alguien con quien el sujeto **ya tiene relacion** (su CEO, su jefe, el comite, un peer interno) y el encargo no es "conseguir la relacion" sino **converger narrativas**: que ambos perfiles y sus publicaciones se refuercen mutuamente. La secuencia de touches en frio (fase 4 estandar) NO aplica.
 
 **Diferencias con el MODO C estandar:**
 
@@ -143,6 +167,7 @@ Worksheet: `templates/profile-alignment-plan.md`. El analisis previo usa igualme
 
 > [!check] Estudio de afinidad + vinculo
 > - [ ] Compliance validado: proposito legitimo, solo info publica, sin scraping
+> - [ ] **Relacion con cada objetivo identificada (tipos 1-5) y sub-playbook enrutado**
 > - [ ] Baseline del sujeto (scorecard dimensional); si es debil -> MODO A primero
 > - [ ] Parrilla de objetivos (7 dimensiones) en 3 circulos
 > - [ ] Matriz de solapamiento 0-3 x 5 ejes; priorizar >=10/15

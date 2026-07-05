@@ -99,7 +99,17 @@ Si el usuario quiere un documento presentable (auditoría + plan para cliente o 
 Cuando el router da C, sustituye los pasos 3-5 por este flujo (los pasos 0-2, 6 y 7 aplican igual). Reference maestro: `10-affinity-connection.md`.
 
 **C1 · Discovery C + gate de compliance (primero).** Quién es el sujeto, quiénes son los objetivos (1-10 perfiles), y el **propósito legítimo** (negocio, partnership, inversión, media, talento, **alineamiento interno**). Material del objetivo: solo información pública profesional, aportada por el usuario o consultada manualmente. **Sin scraping, sin pretextos falsos.** Si el encargo huele a vigilancia personal o acoso, se rechaza.
-> **Detecta la variante:** si el objetivo es alguien **ya conectado** con el sujeto (su CEO, su jefe, el comité, un peer interno), es la **variante de alineamiento interno** (reference 10, §7): el análisis se hace **bidireccional** (publicaciones de ambos) y en C4 se usa `templates/profile-alignment-plan.md` en lugar de la secuencia de touches (no tiene sentido "acercarse en frío" a tu propio jefe).
+
+**Pregunta OBLIGATORIA en C1 — relación con el objetivo.** Antes de analizar nada, pregunta de forma explícita (por cada objetivo, si son varios):
+
+> **¿Qué relación tienes con esta persona?**
+> **1. Misma organización · jerárquica** — tu CEO, tu jefe, la dirección.
+> **2. Misma organización · colega/peer** — compañero de tu nivel u otra área.
+> **3. Colega externo con relación previa** — ex-compañero, conocido del sector, ya conectados.
+> **4. Alguien con quien esperas trabajar** — cliente potencial, partner, hiring manager, futuro empleador.
+> **5. Referente sin relación previa** — inversor, periodista, thought leader; ningún contacto aún.
+
+La respuesta **enruta el sub-playbook** (tabla completa en reference 10, §7): tipos 1-2 → **alineamiento** con `templates/profile-alignment-plan.md` (análisis bidireccional, sin touches en frío); tipo 3 → **reactivación warm** con `connection-plan.md` saltando los touches iniciales (abrir con contexto real compartido); tipos 4-5 → **acercamiento estándar** con `connection-plan.md` completo (en el 4, matiz comercial → añadir `social-selling-plan.md`; matiz candidatura → orientar el perfil a búsqueda de recruiter). No avances a C3 sin esta respuesta.
 
 **C2 · Baseline del sujeto.** Scorecard del perfil propio. Si es débil, MODO A exprés primero: *nunca contactar antes de tener el perfil optimizado y prueba social visible* — el objetivo visitará el perfil a la primera señal.
 

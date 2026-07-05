@@ -2,7 +2,9 @@
 
 > Cargar `references/10-affinity-connection.md`. Solo informacion publica profesional, recogida manualmente o aportada por el usuario. Sin scraping.
 
-**Sujeto:** `<<nombre>>` · **Proposito del vinculo:** `<<negocio / partnership / inversion / media / talento>>` · **Fecha:** `<<YYYY-MM-DD>>`
+**Sujeto:** `<<nombre>>` · **Proposito del vinculo:** `<<negocio / partnership / inversion / media / talento / alineamiento interno>>` · **Fecha:** `<<YYYY-MM-DD>>`
+
+**Relacion con cada objetivo (tipos 1-5, ver reference 10 §7):** `<<1 jerarquica / 2 peer interno / 3 externo con relacion previa / 4 esperas trabajar / 5 referente en frio>>` -> determina el template del plan (alignment / connection).
 
 ## 1. Baseline del sujeto (scorecard 0-100)
 

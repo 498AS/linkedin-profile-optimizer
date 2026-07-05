@@ -1015,6 +1015,8 @@ Mecánica accionable:
 > [!warning] Compliance especifico del MODO C
 > Solo informacion publica profesional, recogida manualmente o aportada por el usuario; **sin scraping**; proposito profesional legitimo (rechazar encargos con olor a vigilancia personal); personalizacion genuina, sin pretextos falsos. Regla de oro: **nunca contactar antes de tener el perfil propio optimizado y prueba social visible.**
 
+**Router de relacion (pregunta obligatoria del discovery):** antes de analizar, preguntar que relacion tiene el sujeto con cada objetivo; la respuesta enruta el sub-playbook. 5 tipos: (1) misma organizacion jerarquica -> alineamiento interno; (2) misma organizacion peer -> alineamiento simetrico con advocacy cruzado; (3) colega externo con relacion previa -> reactivacion warm (abrir con contexto real, sin touches en frio); (4) esperas trabajar juntos (cliente, partner, hiring manager) -> acercamiento estandar con matiz comercial o de candidatura; (5) referente sin relacion previa -> acercamiento en frio + atraccion inversa.
+
 > [!tip] Variante interna - alineamiento con stakeholder ya conectado
 > Si el objetivo es alguien con quien el sujeto YA tiene relacion (su CEO, su jefe, el comite), el encargo no es acercarse sino **converger narrativas**: analisis bidireccional de publicaciones de ambos (temas, tono, valores, formatos), territorio compartido vs complementario, ajustes de perfil que convergen **sin clonar** (regla de complementariedad: mismo mapa, distinta voz), engagement inteligente sobre su contenido, contenido coordinado con credito y refuerzo mutuo. La secuencia de touches en frio NO aplica. KPI real: senales del stakeholder (comenta, comparte, cita, encarga), no vanity metrics.
 

@@ -17,6 +17,8 @@ Carga `references/00-role-and-discovery.md`. Sesgo por defecto: **person-led / e
 Pregunta: **A) Persona · B) Empresa/Marca · C) Afinidad/vínculo con perfiles objetivo · DUAL**. No avanza sin esto: algoritmo, activos, límites y KPIs difieren por modo.
 
 > **MODO C** tiene mini-flujo propio (C1-C5): discovery + gate de compliance → baseline del sujeto (MODO A exprés si el perfil es débil) → mapa de afinidad (`affinity-map.md`) → plan de vínculo por fases (`connection-plan.md`) → informe de 9 secciones. Reference: `10-affinity-connection.md`.
+>
+> En C1 el skill pregunta además la **relación con cada objetivo** (5 tipos: 1 jerárquica interna · 2 peer interno · 3 externo con relación previa · 4 esperas trabajar juntos · 5 referente en frío) y enruta el sub-playbook: tipos 1-2 → alineamiento (`profile-alignment-plan.md`), tipo 3 → reactivación warm, tipos 4-5 → acercamiento estándar. Tabla completa en reference 10 §7.
 
 ### Paso 2 · Recoger material
 Tres vías: **pegar** el contenido actual · **leer en vivo** con `claude-in-chrome` (requiere consentimiento + estar logueado; solo el perfil/Page propio; solo lectura) · **export**. Discovery (objetivo, audiencia, pilares, proof-points) es **prerrequisito del Paso 4**; sin datos no se inventa nada.

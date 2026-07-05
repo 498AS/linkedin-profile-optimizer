@@ -4,6 +4,8 @@
 
 **Sujeto:** `<<>>` · **Objetivos priorizados (>=10/15):** `<<lista, max 5-10>>` · **Horizonte:** 30 dias + mes 2
 
+> **Relacion (del affinity-map):** tipos 4-5 -> secuencia completa. **Tipo 3 (relacion previa)**: saltar touches 1-2 y abrir directamente con contexto real compartido (proyecto, etapa comun); nunca fingir mas cercania de la real. **Tipos 1-2 (interno)**: este template NO aplica -> usar `profile-alignment-plan.md`.
+
 ## Fases
 
 | Fase | Semana | Acciones | Tiempo |

@@ -2,7 +2,9 @@
 
 > Variante interna del MODO C: el objetivo es un stakeholder YA conectado (CEO, jefe, comite, peer). Cargar `references/10-affinity-connection.md` (seccion 7). Prerrequisito: `templates/affinity-map.md` completado para ambos perfiles.
 
-**Sujeto:** `<<nombre y cargo>>` · **Stakeholder:** `<<nombre y cargo, p. ej. nuevo CEO>>` · **Relacion:** `<<jerarquica / peer / comite>>` · **Fecha:** `<<YYYY-MM-DD>>`
+**Sujeto:** `<<nombre y cargo>>` · **Stakeholder:** `<<nombre y cargo, p. ej. nuevo CEO>>` · **Relacion:** `<<tipo 1 jerarquica / tipo 2 peer>>` · **Fecha:** `<<YYYY-MM-DD>>`
+
+> **Tipo 1 (jerarquica):** el sujeto converge hacia la narrativa del stakeholder; credito hacia arriba; riesgo = adulacion/clon. **Tipo 2 (peer):** ajuste simetrico, territorios negociados y repartidos, advocacy cruzado (amplificacion mutua, co-creacion); riesgo = solape de territorio -> repartir explicitamente y dar credito reciproco.
 
 ## 1. Analisis de publicaciones (ultimos 10-15 posts de cada uno)
 
