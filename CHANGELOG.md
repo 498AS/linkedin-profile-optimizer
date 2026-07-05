@@ -2,6 +2,15 @@
 
 Todas las versiones notables de `linkedin-profile-optimizer`.
 
+## [1.2.0] — 2026-07-05
+
+### Añadido
+- **MODO C · variante interna (alineamiento)**: cuando el objetivo es un stakeholder ya conectado (CEO, jefe, comité, peer interno), el análisis pasa a ser bidireccional (publicaciones de ambos: temas, tono, valores, formatos) y el plan sustituye la secuencia de touches por convergencia narrativa: engagement inteligente, convergencia de pilares sin clonar (regla de complementariedad), contenido coordinado y refuerzo mutuo.
+  - Sección 7 en `references/10-affinity-connection.md`
+  - `templates/profile-alignment-plan.md`
+  - Detección de la variante en C1 y desvío en C4 (SKILL.md)
+- Triggers: "alinear mi perfil con mi CEO/jefe", "afinidad con mi nuevo CEO".
+
 ## [1.1.0] — 2026-07-05
 
 ### Añadido

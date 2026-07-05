@@ -1015,7 +1015,10 @@ Mecánica accionable:
 > [!warning] Compliance especifico del MODO C
 > Solo informacion publica profesional, recogida manualmente o aportada por el usuario; **sin scraping**; proposito profesional legitimo (rechazar encargos con olor a vigilancia personal); personalizacion genuina, sin pretextos falsos. Regla de oro: **nunca contactar antes de tener el perfil propio optimizado y prueba social visible.**
 
-**Ejecucion operativa completa**: skill `linkedin-profile-optimizer` (reference `10-affinity-connection.md` + templates `affinity-map.md` y `connection-plan.md`).
+> [!tip] Variante interna - alineamiento con stakeholder ya conectado
+> Si el objetivo es alguien con quien el sujeto YA tiene relacion (su CEO, su jefe, el comite), el encargo no es acercarse sino **converger narrativas**: analisis bidireccional de publicaciones de ambos (temas, tono, valores, formatos), territorio compartido vs complementario, ajustes de perfil que convergen **sin clonar** (regla de complementariedad: mismo mapa, distinta voz), engagement inteligente sobre su contenido, contenido coordinado con credito y refuerzo mutuo. La secuencia de touches en frio NO aplica. KPI real: senales del stakeholder (comenta, comparte, cita, encarga), no vanity metrics.
+
+**Ejecucion operativa completa**: skill `linkedin-profile-optimizer` (reference `10-affinity-connection.md` + templates `affinity-map.md`, `connection-plan.md` y `profile-alignment-plan.md` para la variante interna).
 
 ## LinkedIn Ads
 

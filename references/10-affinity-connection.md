@@ -111,7 +111,35 @@ Web personal (hub) <-> newsletter (profundidad) <-> X (tiempo real) <-> medios (
 
 Convenciones: contenido copy-ready en bloques de codigo · tablas para comparaciones · callouts para el insight clave · variante McKinsey con scorecard 0-100. Nomenclatura: `INFORME_LinkedIn_Afinidad_<<sujeto>>_v01_ZOOPA_<<autor>>_<<YYYYMMDD>>`.
 
-## 7. Checklist sintesis del MODO C
+## 7. Variante interna - alineamiento con un stakeholder ya conectado [GENERALIZADO]
+
+> [!info] Cuando aplica
+> El objetivo es alguien con quien el sujeto **ya tiene relacion** (su CEO, su jefe, el comite, un peer interno) y el encargo no es "conseguir la relacion" sino **converger narrativas**: que ambos perfiles y sus publicaciones se refuercen mutuamente. Detectarla en discovery: si el objetivo es interno/ya conectado, la secuencia de touches en frio (fase 4 estandar) NO aplica.
+
+**Diferencias con el MODO C estandar:**
+
+| Eje | C estandar (acercamiento) | C interno (alineamiento) |
+|---|---|---|
+| Meta | Conexion -> conversacion -> reunion | Convergencia narrativa y refuerzo mutuo |
+| Analisis | Parrilla del objetivo + solapamiento | **Bidireccional**: publicaciones de AMBOS (temas, tono, valores, formatos, cadencia) |
+| Matriz | Solapamiento 0-3 x 5 ejes | Solapamiento **+ complementariedad**: que comparto / que aporto yo que el no cubre |
+| Plan | Fases 0-4 con touches espaciados | Engagement inteligente sobre su contenido + convergencia de pilares + contenido coordinado |
+| Riesgo clave | Parecer spam / pitch prematuro | **Parecer adulador o clon** del jefe |
+
+**Analisis de publicaciones (ambos perfiles):** para cada uno, registrar sobre los ultimos 10-15 posts: temas top 3 · tono (institucional/personal/contrarian) · formatos dominantes · cadencia · valores recurrentes · a quien menciona/comenta. Cruzar en dos listas: **territorio compartido** (donde converger) y **territorio complementario** (donde el sujeto aporta angulo propio).
+
+**Plan de convergencia (sustituye a las fases 2-4):**
+1. **Engagement inteligente** - comentar con sustancia los posts del stakeholder (2-3/semana, aportando dato o angulo, nunca solo aplauso). El hilo de sus posts es el escenario donde la organizacion os ve alinearse.
+2. **Convergencia de pilares** - ajustar 1-2 pilares del sujeto hacia el territorio compartido, manteniendo 1-2 pilares diferenciales propios. El perfil (headline/About) se retoca para reflejar la narrativa comun SIN clonar el lenguaje del stakeholder.
+3. **Contenido coordinado** - posts que desarrollan, aterrizan o complementan los temas que el stakeholder abre (el amplia vision; el sujeto aporta ejecucion/datos/caso). Mencion y credito cuando se construye sobre una idea suya.
+4. **Refuerzo mutuo** - proponer de forma natural co-menciones, resenas cruzadas de hitos del equipo y, si madura, contenido conjunto (post a dos voces, evento, newsletter).
+
+> [!warning] Regla de complementariedad
+> Converger no es imitar. La afinidad util para la carrera y para la organizacion es **compartir territorio con angulo propio**: mismo mapa, distinta voz. Un perfil-eco resta valor a ambos y se percibe internamente como adulacion.
+
+Worksheet: `templates/profile-alignment-plan.md`. El analisis previo usa igualmente `templates/affinity-map.md` (la matriz gana una columna de complementariedad).
+
+## 8. Checklist sintesis del MODO C
 
 > [!check] Estudio de afinidad + vinculo
 > - [ ] Compliance validado: proposito legitimo, solo info publica, sin scraping

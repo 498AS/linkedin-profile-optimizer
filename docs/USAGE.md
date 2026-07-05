@@ -58,6 +58,7 @@ Emite `compliance-checklist.md`: 4 líneas rojas + límites + etiquetado IA (Art
 | `dual-coupling.md` | Acoplamiento persona ↔ Page (modo DUAL) |
 | `affinity-map.md` | Mapa de afinidad con perfiles objetivo (MODO C) |
 | `connection-plan.md` | Plan de vínculo por fases + secuencia 1:1 (MODO C) |
+| `profile-alignment-plan.md` | Alineamiento con stakeholder ya conectado (MODO C interno) |
 | `compliance-checklist.md` | Checklist vinculante del Paso 7 |
 | `deliverable-brief.md` | Brief para `mczoopa` / `deck-zoopa` |
 
@@ -67,3 +68,4 @@ Emite `compliance-checklist.md`: 4 líneas rojas + límites + etiquetado IA (Art
 - `"auditar y mejorar la company page de la marca X para employer branding"` → MODO B.
 - `"queremos estrategia founder-led: el CEO y la página juntos"` → DUAL.
 - `"estudia la afinidad de nuestro director con estos 5 inversores y prepara un plan para conectar"` → MODO C.
+- `"tengo nuevo CEO: analiza si nuestros perfiles y publicaciones son afines y haz un plan para alinearlos"` → MODO C **variante interna** (análisis bidireccional + `profile-alignment-plan.md`, sin secuencia de touches).

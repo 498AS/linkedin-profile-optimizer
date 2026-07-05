@@ -50,6 +50,8 @@ Flujo: **pregunta el modo** (A persona / B empresa / **C afinidad-vínculo** / D
 
 Del plan LinkedIn de David Urbano (ene 2026) se destiló la metodología de **estudio de afinidad/compatibilidad con perfiles objetivo**: parrilla de 7 dimensiones en 3 círculos (peers / grupo / empresa objetivo), matriz de solapamiento 0-3 × 5 ejes (priorizar ≥10/15), nicho narrativo vacío, plan de vínculo en 5 fases (nunca contactar sin perfil optimizado + prueba social) e informe de 9 secciones. Vive en `references/10-affinity-connection.md` + `templates/affinity-map.md` y `connection-plan.md`, y como sección **MODO C** en el prompt v3.0. Compliance propio: solo info pública, sin scraping, propósito legítimo.
 
+**Variante interna (v1.2):** si el objetivo ya está conectado (CEO, jefe, comité), el plan no es de acercamiento sino de **alineamiento**: análisis bidireccional de publicaciones, territorio compartido vs complementario y convergencia de perfiles sin clonar (`templates/profile-alignment-plan.md`).
+
 ## Arquitectura
 
 ```
