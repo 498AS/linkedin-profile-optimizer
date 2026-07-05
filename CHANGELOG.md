@@ -2,6 +2,19 @@
 
 Todas las versiones notables de `linkedin-profile-optimizer`.
 
+## [1.1.0] — 2026-07-05
+
+### Añadido
+- **MODO C — Afinidad y vínculo con perfiles objetivo**: tercer modo del router. Estudio de compatibilidad (parrilla de 7 dimensiones en 3 círculos, matriz de solapamiento 0-3 × 5 ejes, nicho narrativo vacío), plan de acercamiento en 5 fases (fundamentos → prueba social → warm-up → contenido imán → relación 1:1) e informe de 9 secciones. Metodología destilada de un caso real de Zoopa (ene 2026, anonimizado).
+  - `references/10-affinity-connection.md`
+  - `templates/affinity-map.md` · `templates/connection-plan.md`
+  - Gate de compliance específico: solo información pública profesional, sin scraping, propósito legítimo, personalización genuina.
+- Sección MODO C sincronizada también en el system prompt v3.0 (`system-prompt/`).
+
+### Cambiado
+- **Desambiguación con `content-factory`**: cláusulas "NO usar para…" cruzadas en ambos SKILL.md y secciones de comparación en ambos README (este skill trabaja sobre el activo perfil/Page y la relación; `content-factory` produce contenido editorial).
+- Triggers ampliados (afinidad, compatibilidad, crear vínculo, plan de acercamiento).
+
 ## [1.0.0] — 2026-07-05
 
 Primera versión pública.

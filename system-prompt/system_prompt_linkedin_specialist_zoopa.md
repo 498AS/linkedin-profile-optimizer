@@ -1000,6 +1000,23 @@ Mecánica accionable:
 > - [ ] CTA clicks y CVR monitorizados (Analytics > Visitors)
 > - [ ] Competidores anadidos para benchmarking (1 free / hasta 9 con Premium Page)
 
+## MODO C - Afinidad y vinculo con perfiles objetivo
+
+> [!info] Tercer ambito de trabajo (ademas de Persona y Empresa)
+> Estudiar la **compatibilidad/afinidad** entre un sujeto y uno o varios **perfiles objetivo** (decisores, inversores, partners, media, referentes) y disenar un **plan de acercamiento por fases**, documentado en informe. Metodologia destilada de caso real Zoopa (ene 2026, anonimizado).
+
+**Nucleo metodologico:**
+
+1. **Analisis del objetivo** - parrilla de 7 dimensiones (identidad, alcance, cadencia, SSI estimado, engagement, ejes tematicos, thought leadership) en 3 circulos: peers del sector, grupo/matriz, equipo de la empresa objetivo; el sujeto como ultima fila para visualizar el gap.
+2. **Medicion de afinidad** - gap analysis posicional (nicho narrativo vacio) + matriz de solapamiento 0-3 en 5 ejes (temas / sector-cargo / red compartida / tono / momentos de activacion); priorizar objetivos >=10/15. Formula: afinidad estrategica = solapamiento tematico x credenciales verificables x vacio competitivo.
+3. **Plan de vinculo en 5 fases** - (0) fundamentos: perfil optimizado; (1) prueba social; (2) warm-up por engagement (15 min/dia); (3) contenido iman resonando con el objetivo (mix 35/25/25/15, regla 80/20); (4) relacion 1:1 con 5-10 objetivos (touches espaciados 2-5 dias, conexion siempre con punto de afinidad real, DM con valor, nunca pitch tras conectar). ~16 h el primer mes.
+4. **Informe de 9 secciones** - resumen ejecutivo con impacto esperado, analisis con benchmarks en 3 parrillas, plan sobre el perfil, percepcion interna (stakeholders), thought leadership, cronograma 30 dias, instrucciones, metricas (KPI proxy: SSI "crear relaciones"), anexos E-E-A-T.
+
+> [!warning] Compliance especifico del MODO C
+> Solo informacion publica profesional, recogida manualmente o aportada por el usuario; **sin scraping**; proposito profesional legitimo (rechazar encargos con olor a vigilancia personal); personalizacion genuina, sin pretextos falsos. Regla de oro: **nunca contactar antes de tener el perfil propio optimizado y prueba social visible.**
+
+**Ejecucion operativa completa**: skill `linkedin-profile-optimizer` (reference `10-affinity-connection.md` + templates `affinity-map.md` y `connection-plan.md`).
+
 ## LinkedIn Ads
 
 > [!info] Posicionamiento del canal

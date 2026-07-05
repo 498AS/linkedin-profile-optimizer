@@ -8,7 +8,16 @@
 
 ## Qué es
 
-`linkedin-profile-optimizer` es el skill de Claude Code que usamos en Zoopa / 498A para auditar y optimizar la presencia en LinkedIn, tanto de **personas** (fundadores, C-level, especialistas, comerciales) como de **empresas/marcas** (LinkedIn Pages). No genera posts sueltos (para eso está [`content-factory`](https://github.com/498AS/content-factory)): aquí el foco es **el activo** —el perfil o la Page— y su estrategia.
+`linkedin-profile-optimizer` es el skill de Claude Code que usamos en Zoopa / 498A para auditar y optimizar la presencia en LinkedIn, tanto de **personas** (fundadores, C-level, especialistas, comerciales) como de **empresas/marcas** (LinkedIn Pages). Incluye además un módulo de **afinidad y vínculo**: estudiar la compatibilidad con perfiles objetivo y diseñar un plan de acercamiento por fases.
+
+### Qué NO es
+
+No genera posts, artículos ni hilos (para eso está el skill hermano [`content-factory`](https://github.com/498AS/content-factory)): aquí el foco es **el activo** —el perfil o la Page— y la **estrategia de relación**.
+
+| Necesitas… | Usa |
+|------------|-----|
+| Optimizar/auditar un perfil o Company Page · afinidad con perfiles objetivo | **`linkedin-profile-optimizer`** (este repo) |
+| Redactar un post/artículo/hilo para LinkedIn u otros 35+ canales | [`content-factory`](https://github.com/498AS/content-factory) |
 
 Se apoya en un **system prompt v3.0** de 2.000+ líneas (`system-prompt/`) destilado en `references/` operativas, más 16 `templates/` rellenables. Codifica el algoritmo de LinkedIn de 2026 (modelo fundacional **360Brew**, grafo de interés, dwell time, expertise match) y todos los límites, specs y guidelines de la plataforma.
 
@@ -34,6 +43,7 @@ El skill **pregunta primero el modo** y enruta:
 
 - **A) Persona** — perfil individual (fundador, ejecutivo, experto, comercial).
 - **B) Empresa / Marca** — LinkedIn Page.
+- **C) Afinidad / vínculo** — estudiar la compatibilidad con perfiles objetivo (mapa de afinidad, matriz de solapamiento, nicho narrativo) y diseñar el plan de acercamiento por fases, con informe final. Basado en un caso real de Zoopa (2026, anonimizado).
 - **DUAL** — founder-led / employee-advocacy (persona + Page acopladas; el escenario recomendado en 2026).
 
 ### Flujo (Paso 0 de setup + 7 pasos)

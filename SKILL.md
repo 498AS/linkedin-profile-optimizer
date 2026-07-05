@@ -2,7 +2,9 @@
 name: linkedin-profile-optimizer
 description: |
   Optimiza perfiles de LinkedIn aplicando el algoritmo y las best practices 2026 (modelo 360Brew) y TODOS los guidelines de la plataforma. Trabaja en dos modos y, al invocarse, PREGUNTA primero si vas a optimizar un perfil de PERSONA (perfil individual: fundador, ejecutivo, experto, comercial, profesional) o de EMPRESA/MARCA (LinkedIn Page), y aplica el playbook correcto para cada caso: auditoria, reescritura (headline, About, experiencia, skills / tagline y About de Page), plan de contenido, social selling y ads, compliance y KPIs. Opcional: leer el perfil o la Page en vivo con el navegador (claude-in-chrome) y generar un entregable branded (one-pager mczoopa o deck). Usar siempre que alguien quiera optimizar, auditar o mejorar un perfil o pagina de LinkedIn, reescribir su headline o About, hacer personal branding, o preparar una Company Page.
-  Triggers: "linkedin-profile-optimizer", "/linkedin-profile-optimizer", "optimizar perfil de linkedin", "optimizar linkedin", "auditar linkedin", "mejorar mi perfil de linkedin", "mi headline de linkedin", "about de linkedin", "personal branding linkedin", "optimizar company page", "linkedin de empresa", "pagina de empresa linkedin", "optimiza mi linkedin".
+  Incluye un tercer modo de AFINIDAD/VINCULO: estudiar la compatibilidad con otro perfil u otros perfiles de LinkedIn (mapa de afinidad, puntos en comun, plan de acercamiento por fases) y generar el informe correspondiente.
+  Triggers: "linkedin-profile-optimizer", "/linkedin-profile-optimizer", "optimizar perfil de linkedin", "optimizar linkedin", "auditar linkedin", "mejorar mi perfil de linkedin", "mi headline de linkedin", "about de linkedin", "personal branding linkedin", "optimizar company page", "linkedin de empresa", "pagina de empresa linkedin", "optimiza mi linkedin", "afinidad con un perfil", "compatibilidad de perfiles linkedin", "crear vinculo con un perfil", "plan de acercamiento linkedin", "conectar con [persona] en linkedin".
+  NO usar para redactar posts/articulos/hilos de LinkedIn u otros canales: para eso usar `content-factory`. Este skill trabaja sobre el ACTIVO (perfil/Page) y la estrategia de relacion, no produce contenido editorial multicanal.
 ---
 
 # Skill: LinkedIn Profile Optimizer — Zoopa / 498A
@@ -29,6 +31,7 @@ Toda la doctrina vive en `references/`. **No la reproduzcas de memoria: carga el
 | `references/07-compliance-guidelines.md` | **SIEMPRE** antes de recomendar tácticas de crecimiento/outreach (Paso 7) |
 | `references/08-tools-and-deliverables.md` | Herramientas, nomenclatura de archivos y entregables |
 | `references/09-trends-2026.md` | Timeline de cambios 2024-2026 y features retiradas (no recomendar tácticas obsoletas) |
+| `references/10-affinity-connection.md` | **MODO C**: afinidad/compatibilidad con perfiles objetivo y plan de vínculo |
 | `references/knowledge-base-2026.json` | Fuente de datos bruta (12 packs) para verificar cifras/specs |
 
 ## Flujo de trabajo (Paso 0 de setup + 7 pasos; seguir en orden)
@@ -42,9 +45,13 @@ Antes de nada, pregunta de forma explícita:
 > **¿Qué vas a optimizar?**
 > **A) Un perfil de PERSONA** — perfil individual (fundador, ejecutivo, experto, comercial, profesional).
 > **B) Una EMPRESA / MARCA** — LinkedIn Page (company page).
-> *(Si aplican ambos —p. ej. employer brand vía founder-led— dilo y trabajamos el acoplamiento persona↔empresa.)*
+> **C) AFINIDAD / VÍNCULO con otro(s) perfil(es)** — estudiar la compatibilidad con uno o varios perfiles objetivo y diseñar el plan de acercamiento (caso tipo: conectar con un decisor, inversor, partner o referente).
+> *(Si aplican varios —p. ej. employer brand vía founder-led, u optimizar el perfil ANTES de acercarse a un objetivo— dilo y los combinamos: A/B preparan el activo; C construye la relación.)*
 
-Según la respuesta, el reference maestro es `03-mode-a-personal-profile.md` (A) o `04-mode-b-company-page.md` (B). No avances sin esto: el algoritmo, los activos, los límites y los KPIs difieren radicalmente entre modos.
+Según la respuesta, el reference maestro es `03-mode-a-personal-profile.md` (A), `04-mode-b-company-page.md` (B) o `10-affinity-connection.md` (C). No avances sin esto: el algoritmo, los activos, los límites y los KPIs difieren radicalmente entre modos.
+
+> [!note] MODO C tiene su propio mini-flujo
+> Si el usuario elige C, salta a la sección **"MODO C · Afinidad y vínculo"** más abajo (los pasos 3-5 estándar son de optimización de activo y no aplican tal cual). Recomendación: si el perfil propio del sujeto no está optimizado, propon ejecutar primero un MODO A exprés — un perfil débil desactiva cualquier plan de acercamiento.
 
 ### Paso 2 · Recoger el material
 Tres vías (ofrécelas):
@@ -86,6 +93,20 @@ Si el usuario quiere un documento presentable (auditoría + plan para cliente o 
 
 ### Paso 7 · Compliance gate (VINCULANTE, no opcional)
 **No entregues ningún plan sin este bloque.** Rellena y **emite `templates/compliance-checklist.md`** como parte de todo entregable: cada táctica recomendada marcada PASS/FAIL contra las 4 líneas rojas (automatización/bots, scraping, pods, engagement bait) + límites de plataforma (invites <100/sem, aceptación >30-40%, ritmo humano) + etiquetado de IA (EU AI Act Art. 50, oblig. desde 2-ago-2026) + GDPR en outreach B2B + accesibilidad (alt text, subtítulos, hashtags camelCase). **Si cualquier táctica falla, reescríbela antes de cerrar: el cumplimiento gana.** Doctrina completa en `07-compliance-guidelines.md`.
+
+## MODO C · Afinidad y vínculo (mini-flujo)
+
+Cuando el router da C, sustituye los pasos 3-5 por este flujo (los pasos 0-2, 6 y 7 aplican igual). Reference maestro: `10-affinity-connection.md`.
+
+**C1 · Discovery C + gate de compliance (primero).** Quién es el sujeto, quiénes son los objetivos (1-10 perfiles), y el **propósito legítimo** (negocio, partnership, inversión, media, talento). Material del objetivo: solo información pública profesional, aportada por el usuario o consultada manualmente. **Sin scraping, sin pretextos falsos.** Si el encargo huele a vigilancia personal o acoso, se rechaza.
+
+**C2 · Baseline del sujeto.** Scorecard del perfil propio. Si es débil, MODO A exprés primero: *nunca contactar antes de tener el perfil optimizado y prueba social visible* — el objetivo visitará el perfil a la primera señal.
+
+**C3 · Mapa de afinidad** → `templates/affinity-map.md`. Parrillas de objetivos (7 dimensiones, 3 círculos), matriz de solapamiento 0-3 × 5 ejes (priorizar ≥10/15), nicho narrativo vacío, stakeholders internos.
+
+**C4 · Plan de vínculo** → `templates/connection-plan.md`. Fases 0-4 (fundamentos → prueba social → warm-up → contenido imán → relación 1:1), secuencia de touches por objetivo con puntos de afinidad reales, cadencias (15 min/día · 30 min/semana) y seguimiento (KPI proxy: SSI "crear relaciones").
+
+**C5 · Informe.** Estructura de 9 secciones del reference (§6). Nomenclatura: `INFORME_LinkedIn_Afinidad_{sujeto}_v01_ZOOPA_{autor}_{YYYYMMDD}`. Entregable branded opcional (Paso 6) y **compliance gate obligatorio** (Paso 7).
 
 ## Lectura de perfil en vivo (claude-in-chrome)
 
@@ -137,6 +158,8 @@ Vault raíz: `/Users/cop/Documents/OBSIDIAN_WORKSPACE/BIBLIOTECA_COP_2026/`
 | `templates/content-plan-30d.md` | Plan de contenido 30 días + KPIs |
 | `templates/monthly-report.md` | Informe mensual de performance |
 | `templates/dual-coupling.md` | Acoplamiento persona↔Page (modo DUAL) |
+| `templates/affinity-map.md` | Mapa de afinidad con perfiles objetivo (MODO C) |
+| `templates/connection-plan.md` | Plan de vínculo por fases + secuencia 1:1 (MODO C) |
 | `templates/compliance-checklist.md` | Checklist vinculante del Paso 7 |
 | `templates/deliverable-brief.md` | Brief para pasar a `mczoopa`/`deck-zoopa` |
 

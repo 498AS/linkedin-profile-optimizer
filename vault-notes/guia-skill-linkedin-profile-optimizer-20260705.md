@@ -44,7 +44,11 @@ Dentro de Claude Code:
 ```
 O en lenguaje natural: "optimiza mi perfil de LinkedIn", "auditar la company page de X".
 
-Flujo: **pregunta el modo** (A persona / B empresa / DUAL founder-led) → recoge material (pegar / leer en vivo con navegador / export) → auditoría con scorecard → reescritura con opciones (headline ×5, About, etc.) → plan de contenido 30d + KPIs → entregable branded opcional (`mczoopa`/`deck-zoopa`) → **compliance gate vinculante**.
+Flujo: **pregunta el modo** (A persona / B empresa / **C afinidad-vínculo** / DUAL founder-led) → recoge material (pegar / leer en vivo con navegador / export) → auditoría con scorecard → reescritura con opciones (headline ×5, About, etc.) → plan de contenido 30d + KPIs → entregable branded opcional (`mczoopa`/`deck-zoopa`) → **compliance gate vinculante**.
+
+### MODO C · Afinidad y vínculo (añadido v1.1, del caso David Urbano)
+
+Del plan LinkedIn de David Urbano (ene 2026) se destiló la metodología de **estudio de afinidad/compatibilidad con perfiles objetivo**: parrilla de 7 dimensiones en 3 círculos (peers / grupo / empresa objetivo), matriz de solapamiento 0-3 × 5 ejes (priorizar ≥10/15), nicho narrativo vacío, plan de vínculo en 5 fases (nunca contactar sin perfil optimizado + prueba social) e informe de 9 secciones. Vive en `references/10-affinity-connection.md` + `templates/affinity-map.md` y `connection-plan.md`, y como sección **MODO C** en el prompt v3.0. Compliance propio: solo info pública, sin scraping, propósito legítimo.
 
 ## Arquitectura
 
