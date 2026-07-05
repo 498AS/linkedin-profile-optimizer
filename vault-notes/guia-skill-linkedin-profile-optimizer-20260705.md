@@ -25,16 +25,16 @@ relacionado:
 # Skill `linkedin-profile-optimizer` + System Prompt v3.0
 
 > [!info] Qué es
-> Herramienta de Claude Code para **optimizar perfiles de LinkedIn** con el estándar 2026 (algoritmo 360Brew) y el cumplimiento íntegro de los guidelines de la plataforma. Trabaja en **dos modos** — Perfil Individual (persona) y Empresa/Marca (LinkedIn Page) — y al invocarse **pregunta el modo** y aplica el playbook adecuado. Repo público: [498AS/linkedin-profile-optimizer](https://github.com/498AS/linkedin-profile-optimizer).
+> Herramienta de Claude Code para **optimizar perfiles de LinkedIn** con el estándar 2026 (algoritmo 360Brew) y el cumplimiento íntegro de los guidelines de la plataforma. Trabaja en **tres modos** — Perfil Individual, Empresa/Marca y Afinidad/Vínculo — más DUAL (founder-led), modo FLOTA y **capa GEO opcional** (cómo te ven las IAs, vía GEORadar); al invocarse **pregunta el modo** y aplica el playbook adecuado. Repo público: [498AS/linkedin-profile-optimizer](https://github.com/498AS/linkedin-profile-optimizer).
 
 ## Los dos artefactos
 
 | Artefacto | Qué es | Dónde vive |
 |-----------|--------|-----------|
-| **System Prompt v3.0** | La base de conocimiento (el "cerebro"): 2.022 líneas, dual-mode, algoritmo 2026 | [[system_prompt_linkedin_specialist_zoopa]] — canónico en `SYSTEM-PROMPTS/`, **4 copias sincronizadas por MD5** |
+| **System Prompt v3.x** | La base de conocimiento (el "cerebro"): 2.054 líneas, 3 modos + router de relación + módulo GEO, algoritmo 2026 | [[system_prompt_linkedin_specialist_zoopa]] — canónico en `SYSTEM-PROMPTS/`, **5 copias sincronizadas por MD5** (incluida la del repo del skill) |
 | **Skill** | La ejecución operativa: router persona/empresa, auditoría → reescritura → plan → entregable, compliance gate | `~/.claude/skills/linkedin-profile-optimizer/` + repo GitHub |
 
-El prompt es la fuente; el skill se construyó **a partir de él**. Los `references/00-09` del skill son cortes del prompt v3.0 (mantener en sync si el prompt cambia).
+El prompt es la fuente; el skill se construyó **a partir de él**. Los `references/00-11` del skill son cortes del prompt (mantener en sync si el prompt cambia).
 
 ## Cómo se usa
 
@@ -76,11 +76,12 @@ Del plan LinkedIn de David Urbano (ene 2026) se destiló la metodología de **es
 ```
 linkedin-profile-optimizer/
 ├── SKILL.md                 # router + flujo (Paso 0 + 7 pasos)
-├── references/  (10 md + KB) # el cerebro, cortes del prompt v3.0
-│   00-role-and-discovery … 09-trends-2026 · knowledge-base-2026.json
-├── templates/   (16)        # worksheets rellenables (audit, headline, SSI,
-│   experience, about A/B, social-selling, advocacy, ads, newsletter,
-│   content-plan, monthly-report, dual-coupling, compliance-checklist, brief)
+├── references/  (12 md + KB) # el cerebro, cortes del prompt
+│   00-role-and-discovery … 09-trends-2026 · 10-affinity · 11-geo-profile · KB json
+├── templates/   (21)        # worksheets rellenables (audit A/B, headline, SSI,
+│   experience, about A/B, social-selling, advocacy, ads, newsletter, content-plan,
+│   monthly-report, dual-coupling, affinity, alignment, fleet, geo-audit, compliance, brief)
+├── scripts/     (4)         # kb-refresh workflow · kb_diff · runbook · fleet-audit
 └── system-prompt/           # copia del prompt v3.0 (fuente canónica)
 ```
 
