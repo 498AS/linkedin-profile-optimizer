@@ -6,6 +6,8 @@
 [![498AS](https://img.shields.io/badge/by-498AS-blue.svg)](https://498as.com)
 [![Zoopa](https://img.shields.io/badge/with-Zoopa-orange.svg)](https://zoopa.es)
 
+**Página del sistema**: [ES](https://customer-docs-5ux.pages.dev/498a/linkedin-profile-optimizer/) · [CA](https://customer-docs-5ux.pages.dev/498a/linkedin-profile-optimizer/ca) — qué es, cómo funciona, qué hay detrás y sus garantías, con capturas de un entregable real anonimizado.
+
 ## Qué es
 
 `linkedin-profile-optimizer` es el skill de Claude Code que usamos en Zoopa / 498A para auditar y optimizar la presencia en LinkedIn, tanto de **personas** (fundadores, C-level, especialistas, comerciales) como de **empresas/marcas** (LinkedIn Pages). Incluye además un módulo de **afinidad y vínculo**: estudiar la compatibilidad con perfiles objetivo y diseñar un plan de acercamiento por fases.

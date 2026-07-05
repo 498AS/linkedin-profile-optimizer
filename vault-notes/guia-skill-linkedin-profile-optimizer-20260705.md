@@ -94,6 +94,14 @@ linkedin-profile-optimizer/
 
 El skill nunca recomienda automatización, scraping, engagement pods ni engagement bait. La lectura en vivo se limita a un único perfil/Page propio, solo lectura. Paso 7 = gate vinculante con `compliance-checklist.md`.
 
+## Página pública del sistema (jul 2026)
+
+Página explicativa estilo AICompass (clon de diseño mczoopa v2.1), con las mejoras v1.4 como ventajas (cerebro trimestral, flota, humanize, publicación en un paso):
+- **ES**: https://customer-docs-5ux.pages.dev/498a/linkedin-profile-optimizer/
+- **CA**: https://customer-docs-5ux.pages.dev/498a/linkedin-profile-optimizer/ca
+- Vault: `_OUTPUTS/2026-07/linkedin-profile-optimizer-sistema-498a-20260705{,-ca}.{html,pdf}`
+- Capturas: informe piloto real (David Urbano) anonimizado; informe en `linkedin_profiles_OPT/David_Urbano/INFORME_LinkedIn_Perfil_DavidUrbano_v01_498AS_COP_20260705.html`
+
 ## Enlaces
 
 - Repo: https://github.com/498AS/linkedin-profile-optimizer
