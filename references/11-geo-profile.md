@@ -34,7 +34,7 @@
 | Dimension | Pregunta | De donde sale |
 |---|---|---|
 | **Visibilidad sin marca** | ¿Aparece la persona cuando nadie la nombra? ¿En que posicion vs peers? | entity_metrics / mentions en prompts `marca:sin-marca` |
-| **Percepcion con marca** | ¿Que dice la IA al preguntar por ella? ¿Acierta cargo, empresa, trayectoria? ¿Alucina? | responses de prompts `marca:con-marca` |
+| **Percepcion con marca** | ¿Que dice la IA al preguntar por ella? ¿Acierta cargo, empresa, trayectoria? ¿Alucina? **Regla del piloto: antes de marcar un dato como alucinado, contrastarlo contra las fuentes propias del sujeto (web, LinkedIn); puede ser informacion correcta que el sujeto publico** | responses de prompts `marca:con-marca` |
 | **Atributos** | ¿Que atributos asocia la IA vs los que el perfil declara (pilares)? | attribute_mentions + lectura de respuestas |
 | **Coherencia de entidad** | ¿Une la IA las variantes del nombre y las marcas (persona ↔ empresa ↔ producto)? | prompt sonda + co-menciones de entidades own |
 | **Fuentes** (el dato de oro) | ¿Que superficies alimentan la respuesta? ¿Aparece LinkedIn? ¿Su web? ¿Medios? | response_sources del run de Perplexity (source_domain) |

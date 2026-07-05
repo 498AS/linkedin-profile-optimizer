@@ -67,7 +67,7 @@ Del plan LinkedIn de David Urbano (ene 2026) se destiló la metodología de **es
 
 **Piloto real (proyecto GEORadar `Perfil GEO · Carlos Ortet`, id bbaa459a, 156 tasks, 0 fallos):**
 - **Visibilidad sin marca: 0 menciones en los 3 motores** — Carlos solo aparece cuando se le nombra. El nicho "GEO España" lo dominan agencias SEO (Pixelclip, Dobuss, Good Rebels, Human Level, Semrush como herramienta).
-- **Con marca**: Sonar y Gemini correctos (CEO Zoopa, Premios Impacte Sitges); **GPT-4o Mini alucina credenciales** ("ingeniero informático por la UAB").
+- **Con marca**: los 3 motores correctos (CEO Zoopa, Premios Impacte Sitges; la formación UAB que cita GPT-4o Mini coincide con la declarada en carlosortet.com — *corrección 05/07: el diagnóstico inicial de "alucinación" era erróneo*).
 - **Fuentes (Sonar)**: zoopa.es 44 · carlosortet.com 28 · **LinkedIn 39** (es.+www.) · 498as.com 21 · Wikipedia 18 · sitgesnext.com 10 → LinkedIn SÍ alimenta al motor con retrieval; la web propia funciona.
 - Nota técnica: crear proyectos vía MCP requiere `organizationId` (`org_legacy_prod_20260401`); el CLI `radar` local apunta a un endpoint viejo (api.dantse.cc) y necesita `--api-url https://api.georadar.app`.
 
