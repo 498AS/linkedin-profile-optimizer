@@ -6,10 +6,10 @@ Dos artefactos acoplados:
 
 | Artefacto | Rol | Ubicación |
 |-----------|-----|-----------|
-| **System Prompt v3.0** | La base de conocimiento (el "cerebro"). 2.022 líneas, dual-mode, algoritmo 2026. | `system-prompt/system_prompt_linkedin_specialist_zoopa.md` (fuente canónica; en el entorno Zoopa vive en el vault Obsidian con 4 copias sincronizadas por MD5). |
+| **System Prompt v3.x** | La base de conocimiento (el "cerebro"). 2.054 líneas: dual-mode, algoritmo 2026, MODO C con router de relación, módulo GEO del perfil. | `system-prompt/system_prompt_linkedin_specialist_zoopa.md` (fuente canónica; en el entorno Zoopa vive en el vault Obsidian; 5 copias sincronizadas por MD5, esta incluida). |
 | **Skill** | La ejecución operativa (router + flujo + templates). | Este repo = `~/.claude/skills/linkedin-profile-optimizer/`. |
 
-El prompt es la fuente; el skill se construyó **a partir de él**. Los `references/00-09` son **cortes temáticos del prompt v3.0**: si el prompt cambia, hay que regenerarlos.
+El prompt es la fuente; el skill se construyó **a partir de él**. Los `references/00-11` son **cortes temáticos del prompt**: si el prompt cambia, hay que regenerarlos.
 
 ## El "cerebro" es modular (carga bajo demanda)
 
@@ -38,7 +38,7 @@ El prompt es la fuente; el skill se construyó **a partir de él**. Los `referen
 
 1. **Investigación** — 12 agentes en paralelo, uno por dimensión (algoritmo, perfil, page, formatos, ads, social selling, employer brand, avanzados, analítica, compliance, tendencias), con verificación web 2025-2026 → `knowledge-base-2026.json`.
 2. **Síntesis** — 9 redactores compusieron el system prompt v3.0 (672 → 2.022 líneas).
-3. **Skill** — `references/` = cortes del prompt; `SKILL.md` = manual operativo; 16 `templates/`.
+3. **Skill** — `references/` = cortes del prompt; `SKILL.md` = manual operativo; 16 `templates/` iniciales (21 en v1.5).
 4. **Review adversarial** — 5 lentes (formato/trigger, flujo/UX, dual-mode, compliance, completitud). 0 P1; P2/P3 relevantes aplicados (ruta DUAL operativa, +9 templates, gate vinculante, etiquetado IA en el punto de acción, live-read sin scraping).
 
 ## Automatización
@@ -49,6 +49,7 @@ El prompt es la fuente; el skill se construyó **a partir de él**. Los `referen
 | `scripts/kb_diff.py` | Diff KB vigente vs fresco. Matching por claves estables (dimension, field, area); los textos reescritos generan churn, por eso separa "valores cambiados" (alta señal) de "posibles guidelines nuevas" (revisar). Testeado: self-diff = 0. |
 | `scripts/KB-REFRESH-RUNBOOK.md` | Procedimiento trimestral: workflow → diff → issue en GitHub → aplicar con revisión humana → resync 5 copias por MD5. |
 | `scripts/fleet-audit.workflow.js` | Modo FLOTA: auditorías en paralelo (barrera antes de coordinar: el reparto de pilares necesita todos los scorecards) + coordinador. |
+| Módulo GEO del perfil (paso 3.5) | Sin script propio: se ejecuta contra la plataforma GEORadar vía MCP (flujo documentado y validado en `references/11-geo-profile.md`: proyecto → entidad person → personas → prompts bulk → runs por motor → analítica ClickHouse). |
 
 ## Mantenimiento
 

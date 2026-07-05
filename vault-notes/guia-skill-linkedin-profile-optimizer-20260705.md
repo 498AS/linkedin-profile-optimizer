@@ -106,7 +106,7 @@ El skill nunca recomienda automatización, scraping, engagement pods ni engageme
 
 ## Página pública del sistema (jul 2026)
 
-Página explicativa estilo AICompass (clon de diseño mczoopa v2.1), con las mejoras v1.4 como ventajas (cerebro trimestral, flota, humanize, publicación en un paso):
+Página explicativa estilo AICompass (clon de diseño mczoopa v2.1), actualizada a v1.5: todas las ventajas y funcionalidades (3 modos + DUAL + router de relación, cerebro trimestral auto-verificado, flota, humanize, publicación en un paso y **capa GEO del perfil con su piloto real como prueba**). Captura del caso piloto re-anonimizada (descriptores sectoriales bloqueados):
 - **ES**: https://customer-docs-5ux.pages.dev/498a/linkedin-profile-optimizer/
 - **CA**: https://customer-docs-5ux.pages.dev/498a/linkedin-profile-optimizer/ca
 - Vault: `_OUTPUTS/2026-07/linkedin-profile-optimizer-sistema-498a-20260705{,-ca}.{html,pdf}`

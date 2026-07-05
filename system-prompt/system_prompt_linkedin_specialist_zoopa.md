@@ -1022,6 +1022,17 @@ Mecánica accionable:
 
 **Ejecucion operativa completa**: skill `linkedin-profile-optimizer` (reference `10-affinity-connection.md` + templates `affinity-map.md`, `connection-plan.md` y `profile-alignment-plan.md` para la variante interna).
 
+## Modulo GEO del perfil - como ven a la persona los motores de respuesta
+
+> [!info] Capa opcional, diferencial del sistema (validada con piloto real, jul 2026)
+> En 2026 la marca personal tiene dos audiencias: las personas que buscan y las IAs que responden por ti. Este modulo mide la segunda con la tecnologia GEORadar: mini-auditoria de la persona como entidad (~52 prompts, mix 70/30 sin marca/con marca, 3 buyer personas, 3 motores incluyendo uno con retrieval que revela las fuentes citadas).
+
+**Que mide (6 dimensiones):** visibilidad sin marca (¿apareces cuando nadie te nombra?) · percepcion con marca (¿que dice la IA de ti? contrastar SIEMPRE los presuntos datos alucinados contra las fuentes propias del sujeto antes de marcarlos como error) · atributos asociados vs declarados · coherencia de entidad (variantes de nombre, persona-empresa-producto) · fuentes que alimentan cada motor (¿LinkedIn? ¿la web propia?) · competencia emergente del nicho.
+
+**Regla de integracion:** los pilares del perfil LinkedIn y los atributos objetivo ante las IAs son LA MISMA lista; optimizar por separado es pagar dos veces. La remediacion combina perfil (headline/About declaran el territorio), contenido on-pillar y E-E-A-T externo (bio canonica, schema Person con sameAs, desambiguacion de marcas propias frente a terminos genericos).
+
+**Ejecucion operativa:** skill `linkedin-profile-optimizer`, paso 3.5 (reference `11-geo-profile.md` + template `geo-profile-audit.md`). Re-medicion trimestral sobre los mismos prompts.
+
 ## LinkedIn Ads
 
 > [!info] Posicionamiento del canal
