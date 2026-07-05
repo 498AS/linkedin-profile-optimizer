@@ -61,6 +61,16 @@ Del plan LinkedIn de David Urbano (ene 2026) se destiló la metodología de **es
 | **Modo FLOTA** | CEO + hasta 12 portavoces + Page auditados en paralelo (`scripts/fleet-audit.workflow.js`) + coordinación de pilares sin solapes (`templates/fleet-plan.md`). Vendible como programa de advocacy enterprise |
 | **Informe productizado** | Paso 6: mczoopa → publicación opcional en entregas.zoopa.es vía `customer-docs` (confirmación previa; público al instante) |
 
+## Módulo GEO del perfil (v1.5, jul 2026)
+
+**Paso 3.5 opcional**: mini-auditoría GEORadar de la persona como entidad (~52 prompts 70/30, 3 buyer personas, 3 motores incl. Perplexity Sonar con retrieval). Scorecard: visibilidad sin marca · percepción con marca · atributos · coherencia de entidad · **fuentes citadas** · competencia emergente. Piezas: `references/11-geo-profile.md` + `templates/geo-profile-audit.md`.
+
+**Piloto real (proyecto GEORadar `Perfil GEO · Carlos Ortet`, id bbaa459a, 156 tasks, 0 fallos):**
+- **Visibilidad sin marca: 0 menciones en los 3 motores** — Carlos solo aparece cuando se le nombra. El nicho "GEO España" lo dominan agencias SEO (Pixelclip, Dobuss, Good Rebels, Human Level, Semrush como herramienta).
+- **Con marca**: Sonar y Gemini correctos (CEO Zoopa, Premios Impacte Sitges); **GPT-4o Mini alucina credenciales** ("ingeniero informático por la UAB").
+- **Fuentes (Sonar)**: zoopa.es 44 · carlosortet.com 28 · **LinkedIn 39** (es.+www.) · 498as.com 21 · Wikipedia 18 · sitgesnext.com 10 → LinkedIn SÍ alimenta al motor con retrieval; la web propia funciona.
+- Nota técnica: crear proyectos vía MCP requiere `organizationId` (`org_legacy_prod_20260401`); el CLI `radar` local apunta a un endpoint viejo (api.dantse.cc) y necesita `--api-url https://api.georadar.app`.
+
 ## Arquitectura
 
 ```

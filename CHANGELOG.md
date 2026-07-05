@@ -2,6 +2,14 @@
 
 Todas las versiones notables de `linkedin-profile-optimizer`.
 
+## [1.5.0] — 2026-07-05
+
+### Añadido
+- **Módulo GEO del perfil (Paso 3.5, opcional)**: mide cómo perciben a la persona los motores de respuesta (ChatGPT, Gemini, Perplexity) usando la plataforma GEORadar. ~52 prompts (mix 70/30 sin marca/con marca), 3 buyer personas, 3 motores (~156 tasks). Scorecard: visibilidad sin marca, percepción con marca, atributos, coherencia de entidad, fuentes citadas (retrieval) y competencia emergente; remediación conectada al plan LinkedIn (pilares = atributos objetivo).
+  - `references/11-geo-profile.md` · `templates/geo-profile-audit.md`
+  - Degradación elegante sin MCP: sondeo manual con la misma estructura.
+- **Piloto validado end-to-end** (proyecto "Perfil GEO · Carlos Ortet", jul 2026): 156/156 tasks sin fallos; el módulo detectó visibilidad orgánica nula en el nicho, alucinación de credenciales en un motor parametrico y LinkedIn como fuente real del motor con retrieval (39 citas).
+
 ## [1.4.0] — 2026-07-05
 
 ### Añadido

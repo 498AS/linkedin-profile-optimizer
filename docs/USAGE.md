@@ -29,6 +29,9 @@ Carga el reference del modo + `07-compliance-guidelines.md`. Scorecard campo por
 - MODO B → `templates/audit-company-page.md`
 - DUAL → ambos + `templates/dual-coupling.md` (persona primero)
 
+### Paso 3.5 · Capa GEO del perfil (opcional)
+"¿Medimos también cómo te ven las IAs?" → mini-auditoría GEORadar (52 prompts, 3 motores) con `geo-profile-audit.md`: visibilidad sin marca, percepción con marca, fuentes citadas, competencia emergente. Reference: `11-geo-profile.md`.
+
 ### Paso 4 · Reescritura (opciones)
 - **MODO A**: headline (`headline-worksheet.md`), About (`about-personal.md`), experiencia (`experience-bullets.md`), SSI (`ssi-action-plan.md`).
 - **MODO B**: tagline + About SEO (`about-company.md`), advocacy (`advocacy-kit.md`).

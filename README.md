@@ -92,6 +92,10 @@ linkedin-profile-optimizer/
 
 Detalle completo en [`references/01-algorithm-2026.md`](references/01-algorithm-2026.md) y [`docs/`](docs/).
 
+## Módulo GEO del perfil (cómo te ven las IAs)
+
+Paso 3.5 opcional: mini-auditoría con la plataforma [GEORadar](https://georadar.app) que mide si la persona **aparece cuando nadie la nombra** (share of voice del nicho), qué dice la IA al preguntar por ella (y si alucina), qué **fuentes** alimentan cada motor (¿LinkedIn? ¿su web?) y quién domina su territorio. La remediación se integra en el plan LinkedIn: los pilares del perfil y los atributos objetivo ante las IAs son la misma lista. Ver [`references/11-geo-profile.md`](references/11-geo-profile.md).
+
 ## Modo FLOTA (programas enterprise)
 
 Para **CEO + portavoces + Page** (programa de advocacy): `scripts/fleet-audit.workflow.js` audita hasta 12 perfiles **en paralelo** (un agente por perfil, material aportado por el cliente, cero scraping) y un coordinador propone el reparto de pilares sin solapes con `templates/fleet-plan.md`. La Page amplifica, no lidera.

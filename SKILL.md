@@ -3,7 +3,7 @@ name: linkedin-profile-optimizer
 description: |
   Optimiza perfiles de LinkedIn aplicando el algoritmo y las best practices 2026 (modelo 360Brew) y TODOS los guidelines de la plataforma. Trabaja en dos modos y, al invocarse, PREGUNTA primero si vas a optimizar un perfil de PERSONA (perfil individual: fundador, ejecutivo, experto, comercial, profesional) o de EMPRESA/MARCA (LinkedIn Page), y aplica el playbook correcto para cada caso: auditoria, reescritura (headline, About, experiencia, skills / tagline y About de Page), plan de contenido, social selling y ads, compliance y KPIs. Opcional: leer el perfil o la Page en vivo con el navegador (claude-in-chrome) y generar un entregable branded (one-pager mczoopa o deck). Usar siempre que alguien quiera optimizar, auditar o mejorar un perfil o pagina de LinkedIn, reescribir su headline o About, hacer personal branding, o preparar una Company Page.
   Incluye un tercer modo de AFINIDAD/VINCULO: estudiar la compatibilidad con otro perfil u otros perfiles de LinkedIn (mapa de afinidad, puntos en comun, plan de acercamiento por fases) y generar el informe correspondiente.
-  Triggers: "linkedin-profile-optimizer", "/linkedin-profile-optimizer", "optimizar perfil de linkedin", "optimizar linkedin", "auditar linkedin", "mejorar mi perfil de linkedin", "mi headline de linkedin", "about de linkedin", "personal branding linkedin", "optimizar company page", "linkedin de empresa", "pagina de empresa linkedin", "optimiza mi linkedin", "afinidad con un perfil", "compatibilidad de perfiles linkedin", "crear vinculo con un perfil", "plan de acercamiento linkedin", "conectar con [persona] en linkedin", "alinear mi perfil con mi CEO/jefe", "afinidad con mi nuevo CEO", "que nuestros perfiles sean afines", "modo flota", "auditar los perfiles del equipo directivo", "programa de advocacy linkedin", "portavoces linkedin".
+  Triggers: "linkedin-profile-optimizer", "/linkedin-profile-optimizer", "optimizar perfil de linkedin", "optimizar linkedin", "auditar linkedin", "mejorar mi perfil de linkedin", "mi headline de linkedin", "about de linkedin", "personal branding linkedin", "optimizar company page", "linkedin de empresa", "pagina de empresa linkedin", "optimiza mi linkedin", "afinidad con un perfil", "compatibilidad de perfiles linkedin", "crear vinculo con un perfil", "plan de acercamiento linkedin", "conectar con [persona] en linkedin", "alinear mi perfil con mi CEO/jefe", "afinidad con mi nuevo CEO", "que nuestros perfiles sean afines", "modo flota", "auditar los perfiles del equipo directivo", "programa de advocacy linkedin", "portavoces linkedin", "como me ve chatgpt", "que dice la IA de mi", "geo de mi perfil", "aparezco cuando preguntan por expertos".
   NO usar para redactar posts/articulos/hilos de LinkedIn u otros canales: para eso usar `content-factory`. Este skill trabaja sobre el ACTIVO (perfil/Page) y la estrategia de relacion, no produce contenido editorial multicanal.
 ---
 
@@ -32,6 +32,7 @@ Toda la doctrina vive en `references/`. **No la reproduzcas de memoria: carga el
 | `references/08-tools-and-deliverables.md` | Herramientas, nomenclatura de archivos y entregables |
 | `references/09-trends-2026.md` | Timeline de cambios 2024-2026 y features retiradas (no recomendar tácticas obsoletas) |
 | `references/10-affinity-connection.md` | **MODO C**: afinidad/compatibilidad con perfiles objetivo y plan de vínculo |
+| `references/11-geo-profile.md` | **Paso 3.5**: módulo GEO del perfil (cómo te ven las IAs, vía GEORadar) |
 | `references/knowledge-base-2026.json` | Fuente de datos bruta (12 packs) para verificar cifras/specs |
 
 ## Flujo de trabajo (Paso 0 de setup + 7 pasos; seguir en orden)
@@ -68,6 +69,9 @@ Carga el reference del modo + `07-compliance-guidelines.md`. Audita el activo ca
 - **DUAL** → carga `03` **y** `04`; audita **primero la PERSONA** (motor de reach), luego la Page (amplificador); un scorecard por plano + `templates/dual-coupling.md`.
 
 Entrega un **scorecard**: por sección → estado actual, gap, prioridad, acción. Marca lo que rompe algoritmo (disonancia perfil↔tema, enlaces en el cuerpo, campos autocompletados) y lo que roza compliance.
+
+### Paso 3.5 · Capa GEO del perfil (opcional)
+Tras la auditoría, ofrece: *"¿Medimos también cómo te ven las IAs (ChatGPT, Gemini, Perplexity)?"*. Carga `references/11-geo-profile.md`: mini-auditoría en la plataforma GEORadar (~52 prompts 70/30, 3 motores, ~156 tasks) → scorecard con `templates/geo-profile-audit.md` (visibilidad sin marca, percepción con marca, atributos, coherencia de entidad, **fuentes citadas**, competencia emergente). Sin MCP disponible → versión ligera manual. Los hallazgos alimentan el Paso 4: pilares del perfil = atributos objetivo ante las IAs.
 
 ### Paso 4 · Optimización (reescritura)
 Reescribe cada elemento aplicando el reference del modo. Entrega **opciones**, no una sola versión:
@@ -199,6 +203,7 @@ Vault raíz: `/Users/cop/Documents/OBSIDIAN_WORKSPACE/BIBLIOTECA_COP_2026/`
 | `templates/affinity-map.md` | Mapa de afinidad con perfiles objetivo (MODO C) |
 | `templates/connection-plan.md` | Plan de vínculo por fases + secuencia 1:1 (MODO C) |
 | `templates/profile-alignment-plan.md` | Alineamiento de perfiles con stakeholder ya conectado (MODO C interno: CEO, jefe, comité) |
+| `templates/geo-profile-audit.md` | Scorecard GEO del perfil: visibilidad IA + fuentes + remediación (Paso 3.5) |
 | `templates/compliance-checklist.md` | Checklist vinculante del Paso 7 |
 | `templates/deliverable-brief.md` | Brief para pasar a `mczoopa`/`deck-zoopa` |
 
