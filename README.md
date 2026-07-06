@@ -122,6 +122,7 @@ El skill **nunca** recomienda automatización con bots/extensiones, scraping, en
 
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — relación prompt ↔ skill, mapa de referencias, cómo se construyó.
 - [`docs/USAGE.md`](docs/USAGE.md) — el flujo paso a paso, catálogo de templates, ejemplos.
+- [`docs/TEAM-SETUP.md`](docs/TEAM-SETUP.md) — onboarding para el equipo: instalación en 5 minutos, qué funciona de serie y qué requiere configuración (MCP GEORadar, skills hermanos).
 - [`CHANGELOG.md`](CHANGELOG.md) — versiones.
 
 ## Créditos
